@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html id="html">
+  <head>
+    <title>Popcorn</title>
+
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+
+	  <link href="src/infoPageStyles.css" rel="stylesheet" type="text/css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+
+  <div id="pageWrap">
+    <body>
+      <!--Navbar is contained in header-->
+      <!-- <script src="src/index.js"></script> -->
+      <header id="header">
+        <nav>
+          <img id="popcornImage" src="images/popcorn.png" />
+          <h1>Popcorn</h1>
+        </nav>
+      </header>
+
+      <main>
+        <input id="searchBar" type="text" name="search" placeholder="New Movie Search..">
+
+        <div id="new">
+        </div>
+        <div id="loader"></div>
+
+        <div id="movieSection">
+          <img id="moviePoster" class="poster"/>
+          <div id="movieInfo">
+            <h1 id="movieTitle"></h1>
+            <p id="moviePlot"></p>
+            <h4 id="director">Director: </h4>
+            <p id="directorName"></p>
+            <h4 id="writer">Writer: </h4>
+            <p id="writerName"></p>
+            <h4 id="stars">Stars: </h4>
+            <p id="starNames"></p>
+          </div>
+          <div id="movieRatings" class="row">
+            <div class="column" style="background-color:#aaa;">
+              <h4 id="IMDB">IMBD: </h4>
+              <p id="IMDBRating"></p>
+            </div>
+            <div class="column" style="background-color:#bbb;">
+              <h4 id="meta">Metacritic: </h4>
+              <p id="metaRating"></p>
+            </div>
+            <div class="column" style="background-color:#ccc;">
+              <h4 id="rotten">Rotten Tomatoes: </h4>
+              <p id="rottenRating"></p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 id="similarMoviesTitle"></h2>
+        </div>
+
+        <div id="recommendations">
+          <div id="recommendation1" class="recommendation">
+            <img class="poster"></img>
+            <h3></h3>
+            <div id="movieRatings" class="row">
+              <div class="recColumn recColumnIMDB" style="background-color:#aaa;">
+                <h5>IMBD: </h5>
+                <p></p>
+              </div>
+              <div class="recColumn recColumnMC" style="background-color:#bbb;">
+                <h5>Metacritic: </h5>
+                <p></p>
+              </div>
+              <div class="recColumn recColumnRT" style="background-color:#ccc;">
+                <h5>Rotten Tomatoes: </h5>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div id="recommendation2" class="recommendation">
+            <img class="poster"></img>
+            <h3></h3>
+            <div id="movieRatings" class="row">
+              <div class="recColumn recColumnIMDB" style="background-color:#aaa;">
+                <h5>IMBD: </h5>
+                <p></p>
+              </div>
+              <div class="recColumn recColumnMC" style="background-color:#bbb;">
+                <h5>Metacritic: </h5>
+                <p></p>
+              </div>
+              <div class="recColumn recColumnRT" style="background-color:#ccc;">
+                <h5>Rotten Tomatoes: </h5>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div id="recommendation3" class="recommendation">
+            <img class="poster"></img>
+            <h3></h3>
+            <div id="movieRatings" class="row">
+              <div class="recColumn recColumnIMDB" style="background-color:#aaa;">
+                <h5>IMBD: </h5>
+                <p></p>
+              </div>
+              <div class="recColumn recColumnMC" style="background-color:#bbb;">
+                <h5>Metacritic: </h5>
+                <p></p>
+              </div>
+              <div class="recColumn recColumnRT" style="background-color:#ccc;">
+                <h5>Rotten Tomatoes: </h5>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div id="recommendation4" class="recommendation">
+            <img class="poster"></img>
+            <h3></h3>
+            <div id="movieRatings" class="row">
+              <div class="recColumn recColumnIMDB" style="background-color:#aaa;">
+                <h5>IMBD: </h5>
+                <p></p>
+              </div>
+              <div class="recColumn recColumnMC" style="background-color:#bbb;">
+                <h5>Metacritic: </h5>
+                <p></p>
+              </div>
+              <div class="recColumn recColumnRT" style="background-color:#ccc;">
+                <h5>Rotten Tomatoes: </h5>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div id="recommendation5" class="recommendation">
+            <img class="poster"></img>
+            <h3></h3>
+            <div id="movieRatings" class="row">
+              <div class="recColumn recColumnIMDB" style="background-color:#aaa;">
+                <h5>IMBD: </h5>
+                <p></p>
+              </div>
+              <div class="recColumn recColumnMC" style="background-color:#bbb;">
+                <h5>Metacritic: </h5>
+                <p></p>
+              </div>
+              <div class="recColumn recColumnRT" style="background-color:#ccc;">
+                <h5>Rotten Tomatoes: </h5>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div id="recommendation6" class="recommendation">
+            <img class="poster"></img>
+            <h3></h3>
+            <div id="movieRatings" class="row">
+              <div class="recColumn recColumnIMDB" style="background-color:#aaa;">
+                <h5>IMBD: </h5>
+                <p></p>
+              </div>
+              <div class="recColumn recColumnMC" style="background-color:#bbb;">
+                <h5>Metacritic: </h5>
+                <p></p>
+              </div>
+              <div class="recColumn recColumnRT" style="background-color:#ccc;">
+                <h5>Rotten Tomatoes: </h5>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div id="recommendation7" class="recommendation">
+            <img class="poster"></img>
+            <h3></h3>
+            <div id="movieRatings" class="row">
+              <div class="recColumn recColumnIMDB" style="background-color:#aaa;">
+                <h5>IMBD: </h5>
+                <p></p>
+              </div>
+              <div class="recColumn recColumnMC" style="background-color:#bbb;">
+                <h5>Metacritic: </h5>
+                <p></p>
+              </div>
+              <div class="recColumn recColumnRT" style="background-color:#ccc;">
+                <h5>Rotten Tomatoes: </h5>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div id="recommendation8" class="recommendation">
+            <img class="poster"></img>
+            <h3></h3>
+            <div id="movieRatings" class="row">
+              <div class="recColumn recColumnIMDB" style="background-color:#aaa;">
+                <h5>IMBD: </h5>
+                <p></p>
+              </div>
+              <div class="recColumn recColumnMC" style="background-color:#bbb;">
+                <h5>Metacritic: </h5>
+                <p></p>
+              </div>
+              <div class="recColumn recColumnRT" style="background-color:#ccc;">
+                <h5>Rotten Tomatoes: </h5>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <script type="text/javascript" src="src/movieInfo.js"></script>
+
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </body>
+  </div>
+</html>

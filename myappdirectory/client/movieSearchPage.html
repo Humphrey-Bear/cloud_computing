@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html id="html">
+  <head>
+    <title>Popcorn</title>
+
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+
+	  <link href="src/searchPageStyles.css" rel="stylesheet" type="text/css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+
+  <div id="pageWrap">
+    <body>
+      <!--Navbar is contained in header-->
+      <!-- <script src="src/index.js"></script> -->
+      <header>
+      </header>
+
+      <main>
+        <img id="moviesImage" src="images/movies.png" />
+        <div id="moivesOverlay"></div>
+
+        <h1 id="welcome">Welcome to Popcorn</h1>
+
+        <div class="wrap">
+          <div class="search">
+            <input id="searchBar" type="text" class="searchTerm" placeholder="What movie are you looking for?">
+            <button id="searchBtn" type="submit" class="searchButton">
+              <i class="fa fa-search"></i>
+              <image src="images/search.png" />
+            </button>
+          </div>
+        </div>
+      </main>
+
+      <script type="text/javascript" src="src/movieSearch.js"></script>
+
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </body>
+  </div>
+</html>

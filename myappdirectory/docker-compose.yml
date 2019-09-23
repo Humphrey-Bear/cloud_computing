@@ -1,0 +1,15 @@
+version: '3'
+services:
+  server:
+    build: ./server
+    volumes:
+      - "./server/:/src"
+    container_name: server
+    ports:
+      - 3000:3000
+    command: "npm start"
+  client:
+    build: ./client
+    container_name: client
+    ports:
+      - 80:80
